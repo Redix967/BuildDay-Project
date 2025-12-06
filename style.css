@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(171, 66, 66), rgb(71, 3, 3));
+}
+
+.todo-app{
+    max-width: 700px;
+    height: auto;
+    margin: 100px auto 20px;
+    background-color: white;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: darkslategrey;
+    text-decoration: underline;
+    user-select: none;
+}
+
+.row{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.row input{
+    outline: none;
+    border: 2px solid orange;
+    height: 50px;
+    width: 300px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.row button{
+    height: 50px;
+    width: 100px;
+    margin-left: 20px;
+    font-size: 25px;
+    outline: none;
+    border: 2px solid orange;
+    border-radius: 16px;
+    background-color: white;
+    cursor: pointer;
+    color: gray;
+    transition: 0.5s;
+}
+
+.row button:hover{
+    font-size: 20px;
+    border: 10px solid orange;
+    border-radius: 30px;
+}
+
+ul li{
+    list-style: none;
+    font: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: "";
+    position:absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid gray;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: gray;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-color: gray;
+    border: 2px solid rgb(81, 80, 80);
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:Hover{
+    background-color: #edeef0;
+}
